@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partners</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./Screenshot 2025-05-20 105858.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo-placeholder">
+            <img
+              src="./Screenshot 2025-05-20 105858.png"
+              alt="E-Partners Logo"
+              style="height: 60px"
+            />
+            <div class="logo-div">
+              <a href="#" class="logo"><span>Partners</span></a>
+            </div>
+          </div>
+          <div class="nav-right-section">
+            <ul class="nav-links">
+              <li><a href="#about" data-key="nav-about">Haqqımızda</a></li>
+              <li><a href="#services" data-key="nav-services">Xidmətlər</a></li>
+              <li>
+                <a href="#why-choose" data-key="nav-why">Nə Üçün Biz</a>
+              </li>
+              <li><a href="#footer" data-key="nav-contact">Əlaqə</a></li>
+            </ul>
+            <div class="language-switcher">
+              <div class="language-dropdown" onclick="toggleLanguageDropdown()">
+                <span class="current-lang">AZ</span>
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+              </div>
+              <div class="language-options" id="languageOptions">
+                <div
+                  class="language-option active"
+                  onclick="changeLanguage('az')"
+                >
+                  <div class="flag-icon flag-az"></div>
+                  <span>Azərbaycan</span>
+                </div>
+                <div class="language-option" onclick="changeLanguage('en')">
+                  <div class="flag-icon flag-en"></div>
+                  <span>English</span>
+                </div>
+                <div class="language-option" onclick="changeLanguage('ru')">
+                  <div class="flag-icon flag-ru"></div>
+                  <span>Русский</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1 data-key="hero-title">Simplify. Strategize. Succeed</h1>
+        <p data-key="hero-text">
+          Biz İT, Marketinq, Hüquq, Maliyyə və Satınalma sahələrində ağıllı,
+          inteqrasiya olunmuş həllər təqdim edirik.
+        </p>
+        <a href="#footer" class="cta-button" data-key="hero-button"
+          >Bizimlə İşləyin</a
+        >
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title" data-key="about-title">Haqqımızda</h2>
+        <p data-key="about-text">
+          E -Partners – biznesinizin hər mərhələsində yanınızda olaraq 360
+          dərəcə konsaltin q həllərini təqdim edən şirkətdir . Biz maliyyə,
+          marketinq, hüquq, insan resursları, informasiya texnologiyaları,
+          satınalma və təlim sahələrində yüksək ixtisaslaşmış xidmətlər təqdim
+          edirik . Məqsədimiz : Müştərilərimizə effektiv strategiyalar təqdim
+          etməklə onların rəqabət üstünlüyünü artırmaq və davamlı inkişafı təmin
+          etməkdir . Dəyərlərimiz : Peşəkarlıq, etibarlılıq, çeviklik və
+          nəticəyə fokuslanmaq
+        </p>
+      </div>
+    </section>
+
+    <div id="services" class="services-container">
+      <h2 class="services-title" data-key="services-title">Xidmətlərimiz</h2>
+      <div class="hexagon-grid">
+        <div class="hexagon">
+          <div class="hexagon-content">
+            <i class="fas fa-balance-scale hexagon-icon"></i>
+            <div class="hexagon-title" data-key="service-law">Hüquq</div>
+            <div class="hexagon-description" data-key="service-law-desc">
+              <ul>
+                <li>Korporativ hüquq xidmətləri</li>
+                <li>Müqavilələrin hazırlanması və hüquqi təhlili</li>
+                <li>Vergi və gömrük prosedurlarında yardım</li>
+                <li>Əmək və Ailə qanunvericiliyi üzrə məsləhət xidmətləri</li>
+                <li>Mübahisələrin həlli və hüquqi risklərin idarə olunması</li>
+                <li>
+                  Lisenziyalaşdırma və dövlət orqanları ilə işlərin aparılması
+                </li>
+                <li>Məhkəmələrdə təmsilçilik</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hexagon">
+          <div class="hexagon-content">
+            <i class="fas fa-users hexagon-icon"></i>
+            <div class="hexagon-title" data-key="service-hr">
+              İnsan Resursları
+            </div>
+            <div class="hexagon-description" data-key="service-hr-desc">
+              <ul>
+                <li>İşə qəbul və namizəd seçimi</li>
+                <li>Perfomansın idarə edilməsi</li>
+                <li>Komanda motivasiyası və liderlik proqramları</li>
+                <li>İR Audit və strukturun qurulması</li>
+                <li>Daxili prosedurların hazlrlanması</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hexagon">
+          <div class="hexagon-content">
+            <i class="fas fa-handshake hexagon-icon"></i>
+            <div class="hexagon-title" data-key="service-procurement">
+              Satınalma
+            </div>
+            <div
+              class="hexagon-description"
+              data-key="service-procurement-desc"
+            >
+              <ul>
+                <li>Uyğun satınalma müsabiqəsinin seçilməsi</li>
+                <li>
+                  Uyğunluq sənədələrinin hazırlanması və portala yüklənməsi
+                </li>
+                <li>Müvafiq sorğuların verilməsi</li>
+                <li>Şikayətin verilməsi və izlənməsi</li>
+                <li>
+                  Birgə fəaliyyət üçün müvafiq bölgülü sənədlərin hazırlanması
+                </li>
+                <li>Müqavilənin hazırlanması</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hexagon">
+          <div class="hexagon-content">
+            <i class="fas fa-money-bill-wave hexagon-icon"></i>
+            <div class="hexagon-title" data-key="service-finance">Maliyyə</div>
+            <div class="hexagon-description" data-key="service-finance-desc">
+              <ul>
+                <li>Büdcələmə və maliyyə planlaşdırılması</li>
+                <li>Vergi planlaşdırılması və audit</li>
+                <li>İnvestisiya və risklərin idarə olunması</li>
+                <li>Maliyyə hesabatlarının təhlili</li>
+                <li>Nəzarət sistemlərinin qurulması</li>
+                <li>Startap və KOB-lar üçün maliyyə modelləri</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hexagon">
+          <div class="hexagon-content">
+            <i class="fas fa-bullhorn hexagon-icon"></i>
+            <div class="hexagon-title" data-key="service-marketing">
+              Marketinq
+            </div>
+            <div class="hexagon-description" data-key="service-marketing-desc">
+              <ul>
+                <li>Marketinq plan və strategiyaların yazılması</li>
+                <li>Brend inkişafı və mövqeləndirmə</li>
+                <li>Sosial media idarəçiliyi və reklam kampaniyaları</li>
+                <li>Kontent marketinqi və SEO xidmətləri</li>
+                <li>Müştəri təcrübəsinin təkmilləşdirilməsi</li>
+                <li>Analitik və performans ölçümləri</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hexagon">
+          <div class="hexagon-content">
+            <i class="fas fa-laptop-code hexagon-icon"></i>
+            <div class="hexagon-title" data-key="service-it">IT</div>
+            <div class="hexagon-description" data-key="service-it-desc">
+              <ul>
+                <li>İT strategiya və transformasiya xidmətləri</li>
+                <li>Sistem inteqrasiyası və infrastruktur quruculuğu</li>
+                <li>Kibertəhlükəsizlik həlləri</li>
+                <li>Bulud texnologiyaları və verilənlərin idarə olunması</li>
+                <li>Proqram təminatı və avtomatlaşdırma həlləri</li>
+                <li>Texniki audit və İT risklərin qiymətləndirilməsi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="why-choose" class="why-choose">
+      <div class="container">
+        <h2 class="section-title why-choose-title" data-key="why-title">
+          Nə Üçün Bizi Seçməlisiniz
+        </h2>
+        <div class="benefits">
+          <div class="benefit">
+            <div class="benefit-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="benefit-title" data-key="benefit1-title">
+              Çevik və Etibarlı
+            </h3>
+            <p class="benefit-description" data-key="benefit1-desc">
+              Biz dəyişən şəraitə tez uyğunlaşırıq, eyni zamanda ardıcıl
+              keyfiyyət və performans saxlayırıq.
+            </p>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 class="benefit-title" data-key="benefit2-title">
+              Sənaye Təcrübəsi
+            </h3>
+            <p class="benefit-description" data-key="benefit2-desc">
+              Komandamız müxtəlif sənaye və sektorlarda onilliklər təcrübəsini
+              birləşdirir.
+            </p>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="benefit-title" data-key="benefit3-title">
+              Fərdiləşdirilmiş Həllər
+            </h3>
+            <p class="benefit-description" data-key="benefit3-desc">
+              Biz sizin unikal çətinliklərinizə və imkanlarınıza ünvanlanmış
+              fərdi strategiyalar yaradırıq.
+            </p>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="benefit-title" data-key="benefit4-title">
+              Müştəri Mərkəzli Yanaşma
+            </h3>
+            <p class="benefit-description" data-key="benefit4-desc">
+              Sizin müvəffəqiyyətiniz bizim prioritetimizdir. Biz etimad və
+              nəticələr əsasında davamlı tərəfdaşlıq qururuq.
+            </p>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="benefit-title" data-key="benefit5-title">
+              İnnovasiya və Texnologiya
+            </h3>
+            <p class="benefit-description" data-key="benefit5-desc">
+              Ən son texnologiyalar və innovativ həllərlə biznesinizi gələcəyə
+              hazırlayırıq.
+            </p>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3 class="benefit-title" data-key="benefit6-title">24/7 Dəstək</h3>
+            <p class="benefit-description" data-key="benefit6-desc">
+              Hər zaman yanınızdayıq və suallarınıza cavab verməyə hazırıq.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3 class="footer-title">E-Partners</h3>
+            <p data-key="footer-desc">
+              Müvəffəqiyyət və böyümə həyata keçirən inteqrasiya edilmiş biznes
+              həlləri təqdim edirik.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://www.instagram.com/e_partners_mmc/"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/epartnerscompany/posts/?feedView=all"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-info">
+            <h3 class="footer-title" data-key="footer-links">
+              Sürətli Keçidlər
+            </h3>
+            <ul class="footer-links">
+              <li><a href="#about" data-key="nav-about">Haqqımızda</a></li>
+              <li><a href="#services" data-key="nav-services">Xidmətlər</a></li>
+              <li>
+                <a href="#why-choose" data-key="nav-why">Nə Üçün Biz</a>
+              </li>
+              <li><a href="#footer" data-key="nav-contact">Əlaqə</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <h3 class="footer-title" data-key="footer-contact">Əlaqə</h3>
+            <ul class="footer-links">
+              <li><i class="fas fa-envelope"></i> info@e-partners.com</li>
+              <li><i class="fas fa-phone"></i>+994 12 526 66 96</li>
+              <li><i class="fa-brands fa-whatsapp"></i>+994 12 526 66 96</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>Çinar Park BM, Bina 2, Ziya
+                Bünyadov, 1965 Mərtəbə 3, Baku 1075
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p data-key="footer-copyright">
+            &copy; 2025 E-Partners. Bütün hüquqlar qorunur.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
