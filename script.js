@@ -1,5 +1,4 @@
-  
-const translations = {
+        const translations = {
   az: {
     "nav-about": "Haqqımızda",
     "nav-services": "Xidmətlər",
@@ -495,3 +494,33 @@ const translations = {
     manageNavElements();
     window.addEventListener("resize", manageNavElements);
   });
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const hexagons = document.querySelectorAll('.hexagon');
+        const grid = document.querySelector('.hexagon-grid');
+
+        hexagons.forEach(hex => {
+            hex.addEventListener('click', function(event) {
+                event.stopPropagation(); // Prevent click from bubbling up to the document
+
+                // Check if the clicked hexagon is already active
+                const isAlreadyActive = this.classList.contains('active');
+
+                // First, remove 'active' from all hexagons
+                hexagons.forEach(h => h.classList.remove('active'));
+
+                // If it wasn't active, make it active
+                if (!isAlreadyActive) {
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Add a click listener to the whole document to close the active hexagon
+        document.addEventListener('click', function(event) {
+            // If the click is outside the grid, remove the active class from all
+            if (!grid.contains(event.target)) {
+                 hexagons.forEach(h => h.classList.remove('active'));
+            }
+        });
+    });
