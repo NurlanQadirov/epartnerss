@@ -345,14 +345,14 @@ function changeLanguage(lang) {
     const key = element.getAttribute("data-key");
     if (translations[lang] && translations[lang][key]) {
       if (element.classList.contains("hexagon-description")) {
-        element.innerHTML = translations[lang][key]; // HTML məzmunu üçün innerHTML
+        element.innerHTML = translations[lang][key]; 
       } else {
-        element.textContent = translations[lang][key]; // Normal mətn üçün textContent
+        element.textContent = translations[lang][key]; 
       }
     }
   });
 
-  // Close dropdown after selection
+
   const dropdown = document.querySelector(".language-dropdown");
   const options = document.getElementById("languageOptions");
   if (dropdown.classList.contains("active")) {
@@ -379,7 +379,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
-      // Close mobile menu if open
+     
       if (window.innerWidth <= 768) {
         const navLinks = document.querySelector(".nav-links");
         const menuIcon = document.querySelector(".mobile-menu i");
@@ -390,7 +390,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         }
       }
 
-      // Smooth scroll
+   
       const headerOffset = document.querySelector("header").offsetHeight;
       const elementPosition = target.getBoundingClientRect().top;
       const offsetPosition =
@@ -404,7 +404,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Mobile menu functionality
+
 document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.querySelector(".mobile-menu");
   if (!mobileMenu) return;
@@ -420,22 +420,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const languageSwitcher =
     desktopNavContainer.querySelector(".language-switcher");
 
-  // Function to move elements between menus
+  
   const manageNavElements = () => {
     const isMobile = window.innerWidth <= 768;
 
     if (isMobile) {
-      // If mobile menu doesn't have links, move them
+    
       if (navLinks.children.length === 0) {
         Array.from(desktopNavLinks.children).forEach((li) => {
           navLinks.appendChild(li.cloneNode(true));
         });
 
-        // Clone language switcher and add event listeners
         const clonedLanguageSwitcher = languageSwitcher.cloneNode(true);
         navLinks.appendChild(clonedLanguageSwitcher);
 
-        // Add event listeners to cloned elements
+       
         const clonedDropdown =
           clonedLanguageSwitcher.querySelector(".language-dropdown");
         const clonedOptions =
@@ -461,12 +460,12 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
       }
-      // Ensure mobile menu is in the right place
+    
       if (!mobileMenu.nextElementSibling?.isEqualNode(navLinks)) {
         mobileMenu.parentNode.appendChild(navLinks);
       }
     } else {
-      // On desktop, ensure mobile menu is empty and hidden
+     
       navLinks.innerHTML = "";
       navLinks.classList.remove("active");
       if (menuIcon) {
@@ -486,7 +485,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Close dropdown when clicking outside
+
   document.addEventListener("click", function (e) {
     if (!e.target.closest(".language-switcher")) {
       document
@@ -497,7 +496,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Initial setup and on resize
+ 
   manageNavElements();
   window.addEventListener("resize", manageNavElements);
 });
@@ -508,24 +507,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hexagons.forEach((hex) => {
     hex.addEventListener("click", function (event) {
-      event.stopPropagation(); // Prevent click from bubbling up to the document
+      event.stopPropagation(); 
 
-      // Check if the clicked hexagon is already active
+      
       const isAlreadyActive = this.classList.contains("active");
 
-      // First, remove 'active' from all hexagons
+     
       hexagons.forEach((h) => h.classList.remove("active"));
 
-      // If it wasn't active, make it active
+    
       if (!isAlreadyActive) {
         this.classList.add("active");
       }
     });
   });
 
-  // Add a click listener to the whole document to close the active hexagon
+
   document.addEventListener("click", function (event) {
-    // If the click is outside the grid, remove the active class from all
+  
     if (!grid.contains(event.target)) {
       hexagons.forEach((h) => h.classList.remove("active"));
     }
